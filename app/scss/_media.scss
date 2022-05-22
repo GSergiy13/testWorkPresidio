@@ -1,0 +1,227 @@
+@media only screen and (max-width : 1200px) {}
+
+@media only screen and (max-width : 992px) {
+    .tabs-content-img {
+        width: 320px;
+    }
+
+    .faq-content__picture {
+        max-width: 367px;
+    }
+}
+
+@media only screen and (max-width : 768px) {
+
+    .header {
+        margin-top: 108px;
+
+        &__box {
+            &-title {
+                font-size: 36px;
+                line-height: 100%;
+            }
+        }
+    }
+
+    .header__top {
+        padding: 20px 0;
+
+        &-inner {
+            flex-direction: row-reverse;
+            justify-content: center;
+        }
+    }
+
+    .menu {
+        font-size: 16px;
+
+        &__list {
+            display: block;
+            position: absolute;
+            width: 200px;
+            text-align: left;
+            background: #fff;
+            padding: 15px 10px;
+            left: 0;
+            top: 40px;
+            transform: translateX(-220px);
+            transition: all .5s;
+
+            &-active {
+                transform: translateX(-15px)
+            }
+
+            li {
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .menu__item+.menu__item {
+        margin-left: 0;
+    }
+
+    .bars__active span {
+        background: #3e3e3e;
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    .bars__active span:nth-child(1) {
+        transform: rotate(40deg);
+    }
+
+    .bars__active span:nth-child(2) {
+        transform: rotate(-40deg);
+    }
+
+    .bars__active span:nth-child(3) {
+        display: none;
+    }
+
+    .scroll__header {
+        padding: 15px 0;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    .announcement {
+        padding: 10px 0 8px;
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+    .tabs-container {
+        position: relative;
+        padding: 22px 21px 0;
+    }
+
+    .tabs-content {
+
+        &__inner {
+            flex-direction: column-reverse;
+        }
+
+        &__text {
+            width: auto;
+
+            &-title {
+                &--desktop {
+                    display: none;
+                }
+
+                &--mobil {
+                    display: block;
+                    margin-bottom: 20px;
+                    text-align: center;
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &__img {
+            width: 100%;
+
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .tabs {
+        display: none;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -25px;
+
+        li.slick-active {
+            button {
+                background-color: #9a9a9a;
+            }
+        }
+
+        button {
+            font-size: 0;
+            padding: 0;
+            margin: 0 10px;
+            background: #dfdfdf;
+            width: 8px;
+            height: 8px;
+            border: transparent;
+            border-radius: 50%;
+        }
+    }
+
+    .faq-content {
+        margin-top: 30px;
+
+        &__picture {
+            display: none;
+        }
+
+        &__text {
+            &-img {
+                display: block;
+                width: 290px;
+                margin: 15px auto 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 480px) {
+
+    .header {
+        background-image: url(../images/mobil-header.jpg);
+        padding: 80px 0 200px;
+
+        text-align: center;
+
+        &__box {
+            &-title {
+                font-size: 26px;
+                line-height: 100%;
+            }
+
+            &-text {
+                font-size: 16px;
+                margin-top: 10px;
+                line-height: 120%;
+            }
+        }
+    }
+
+    .header__box {
+        max-width: 100%;
+    }
+
+    .title-section {
+        font-size: 28px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .tabs-content-img {
+        width: 260px;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {}
